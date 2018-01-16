@@ -23,7 +23,7 @@ class RobotHead: SCNReferenceNode, VirtualFaceContent {
     }()
     
     init() {
-        guard let url = Bundle.main.url(forResource: "robotHead", withExtension: "scn", subdirectory: "Models.scnassets")
+        guard let url = Bundle.main.url(forResource: "monkey-head", withExtension: "scn", subdirectory: "Models.scnassets")
             else { fatalError("missing expected bundle resource") }
         super.init(url: url)!
         self.load()
