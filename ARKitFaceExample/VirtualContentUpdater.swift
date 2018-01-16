@@ -71,7 +71,6 @@ class VirtualContentUpdater: NSObject, ARSCNViewDelegate {
     /// - Tag: ARFaceGeometryUpdate
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let faceAnchor = anchor as? ARFaceAnchor else { return }
-        
         virtualFaceNode?.update(withFaceAnchor: faceAnchor)
     }
 }
